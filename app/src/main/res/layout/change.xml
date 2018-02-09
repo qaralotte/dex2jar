@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<ImageView
+		android:layout_height="75dp"
+		android:layout_width="75dp"
+		android:layout_marginBottom="10dp"
+		android:layout_centerInParent="true"
+		android:background="@drawable/ic_cog"
+		android:id="@+id/cog_logo"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/convertingtext"
+		android:textColor="#FFFFFF"
+		android:text="Converting"
+		android:layout_below="@id/cog_logo"/>
+
+	<me.zhanghai.android.materialprogressbar.MaterialProgressBar
+		android:layout_height="wrap_content"
+		android:layout_width="150dp"
+		android:layout_below="@id/convertingtext"
+		android:layout_marginTop="10dp"
+		android:layout_centerHorizontal="true"
+		android:indeterminate="true"
+		android:transitionName="progresstocheck"
+		app:mpb_progressStyle="horizontal"
+		app:mpb_progressBackgroundTint="#424242"
+		app:mpb_progressTint="#FFFFFF"
+		style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+		android:id="@+id/convertingprogress"/>
+
+</RelativeLayout>
+
